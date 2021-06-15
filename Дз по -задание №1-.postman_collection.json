@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "81ca1792-e480-4527-8531-72d3f99707b9",
+		"name": "Дз по \"задание №1\"",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://116.203.27.46:5002/login?login=123&password=123",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "123"
+						},
+						{
+							"key": "password",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reg_2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny\"",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"age\": 15,\r\n    \"salary\":33,\r\n    \"name\":\"qweq\",\r\n    \"auth_token\":\"/s34lfgbj/abc/jjd909/81914kjkWpqc870abc171800evny\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/user_info",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"user_info"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "100",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "slon",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_data_3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "slon",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "\"/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/new_data?age=10&salary=100&name=slon",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"new_data"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "10"
+						},
+						{
+							"key": "salary",
+							"value": "100"
+						},
+						{
+							"key": "name",
+							"value": "slon"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_pet_info_4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "slon",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/test_pet_info?age=10&weight=100&name=slon",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"test_pet_info"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "10"
+						},
+						{
+							"key": "weight",
+							"value": "100"
+						},
+						{
+							"key": "name",
+							"value": "slon"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_user_5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "slon",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "\"/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/get_test_user?age=10&salary=100&name=slon&auth_token=\"/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny\"",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"get_test_user"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "10"
+						},
+						{
+							"key": "salary",
+							"value": "100"
+						},
+						{
+							"key": "name",
+							"value": "slon"
+						},
+						{
+							"key": "auth_token",
+							"value": "\"/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "currency_6",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "auth_token",
+							"value": "\"/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny\"",
+							"type": "text"
+						},
+						{
+							"key": "curr_code",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/currency?auth_token={((token))}",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"currency"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "{((token))}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "curr_byn_7",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny\"",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "auth_token",
+							"value": "\"/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny\"",
+							"type": "text"
+						},
+						{
+							"key": "curr_code",
+							"value": "27",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/curr_byn?auth_token=\"/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny\"&curr_code=23",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"curr_byn"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "\"/s34lfgbj/None/jjd909/43699kjkWpqc4420None456902evny\""
+						},
+						{
+							"key": "curr_code",
+							"value": "23"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
